@@ -30,7 +30,7 @@
             <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
           </div>
           <div class="contact-nav">
-            <p><a href="tel:817.568.2000">817.568.2000</a> | <a href="appointment.html"><button class="btn-1">Appointment</button></a></p>
+            <a href="tel:817.568.2000">817.568.2000</a> | <a class="btn-1" href="appointment.html">Appointment</a>
           </div>
         </div>
       </div>
@@ -155,10 +155,10 @@
             </div>
             <div class="form-group">
               <label for="prefered-time">Preferred Time<em class="required">*</em></label>
-              <select name="Preferred-Appointment-Time" class="required">
-                <option>Morning (9am - 11am)</option>
-                <option>Noon (11am - 1pm)</option>
-                <option>Night (1pm - 5pm)</option>
+              <select id="apt-time" name="Preferred-Appointment-Time" class="required">
+                <option value="Morning (9am - 11am)">Morning (9am - 11am)</option>
+                <option value="Noon (11am - 1pm)">Noon (11am - 1pm)</option>
+                <option value="Night (1pm - 5pm)">Night (1pm - 5pm)</option>
               </select>
             </div>
             <div class="form-group">
@@ -170,7 +170,7 @@
               <textarea name="Description-of-work" cols="35" rows="5" class="required"></textarea>
             </div>
 
-              <a href="success.html"><div type="submit" class="btn-2">Submit</div></a>
+              <a href="success_apt.html"><div type="submit" class="btn-2">Submit</div></a>
               <a href="fail.html"><div type="submit" class="btn-3">Cancel</div></a>
             </fieldset>
           </form>
@@ -188,6 +188,8 @@
                 <li><a href="faq.html">Common Questions</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="assets\fishCreek 1.0.pdf">Sitemap</a></li>
+                <li><a href="404page.html">404 error</a></li>
+                <li><a href="500page.html">500 error</a></li>
               </ul>
             </div>
             <div class="footer-links">
@@ -223,7 +225,7 @@
           <form>
             <div class="form-group">
               <input type="email" id="email" class="form-control" placeholder="Email"/><br>
-              <a href="success.html"><button type="button" name="button" class="btn-1">Subscribe</button></a>
+              <a href="success.html" class="btn-1">Subscribe</a>
             </div>
           </form>
         </div>

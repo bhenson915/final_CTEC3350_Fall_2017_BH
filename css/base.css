@@ -248,6 +248,9 @@ i {
   border-top: 1px solid #cccccc;
 }
 
+button {
+  border-radius: 0;
+}
 
 /* ==== End Inline Elements ====*/
 
@@ -420,11 +423,18 @@ form {
 }
 
 .form-group input {
-  padding: .5em;
+  padding: 1em;
   margin: .5em 0;
   border: 1px solid #cccccc;
   box-sizing: border-box;
   max-width: 40em;
+}
+
+select {
+  border-radius: 0;
+  background: #ffffff;
+  height:32px;
+  border:1px solid #d8d8d8;
 }
 
 .navbar .form-group input {

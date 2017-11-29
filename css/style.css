@@ -544,6 +544,7 @@ button.accordion {
       #primary_nav_wrap ul ul {
         right: 0;
         left: 100;
+        background-color: #ffffff;
       }
 
       button.accordion {
@@ -551,7 +552,7 @@ button.accordion {
         background-color: #1C3963;
         color: #ffffff;
         cursor: pointer;
-        padding: 18px;
+        padding: 18px 18px 18px 10%;
         width: 100%;
         border: none;
         text-align: left;
@@ -565,7 +566,7 @@ button.accordion {
       }
 
       div.panel {
-          padding: 0 18px;
+          padding: 0 10%;
           display: none;
           background-color: #ffffff;
           height: 100%;
@@ -584,6 +585,26 @@ button.accordion {
         padding: 1em;
       }
     }
+
+    @media only screen and (max-width: 425px){
+      #primary_nav_wrap {
+        width: 100%;
+      }
+
+      #primary_nav_wrap #logo {
+        width: 200px;
+      }
+
+      button.accordion {
+        padding: 18px;
+      }
+
+      div.panel {
+        padding: 0 18px;
+        margin: 0;
+      }
+    }
+
 
 /* ========================= End of Navigation ============================== */
 
@@ -681,6 +702,10 @@ footer {
 
 .footer-subscribe strong {
   color: #E4752B;
+}
+
+.footer-subscribe .btn-1 {
+  color: white;
 }
 
 @media only screen and (max-width: 900px){
@@ -854,7 +879,6 @@ footer {
   -webkit-flex-basis: 80%;
 
   box-sizing: border-box;
-  margin: 5% 0 5% 5%;
 
 }
 
@@ -919,9 +943,23 @@ footer {
 .blog-archive-img img{
   width: 100%;
 }
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 768px){
   .blog-archive-img {
     display: none;
+  }
+
+  .blog-sidebar {
+    display: none;
+  }
+
+  .blog-list-content {
+    flex-basis: 100%;
+    -webkit-flex-basis: 100%;
+  }
+
+  .blog-list {
+    flex-basis:100%;
+    -webkit-flex-basis: 100%;
   }
 }
 
@@ -1532,6 +1570,17 @@ footer {
   box-shadow: -1px -1px #F9A440,  inset -1px -1px 0 0 #F9A440;
 }
 
+#events-title, #events-calendar {
+  display: block;
+}
+
+@media only screen and (max-width: 600px){
+  #events-title, #events-calendar {
+    display: none;
+    align-items:
+  }
+}
+
 /*======================== End of Calendar ===================================*/
 
 
@@ -1643,7 +1692,15 @@ footer {
 .hero-services-content {
   background-color: rgba(255, 255, 255, .8);
   padding: 2em;
-  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 900px){
+  .hero-services-content {
+    max-width: 100%;
+    padding: .5em;
+    margin: 1%;
+    background-color: rgba(255, 255, 255, .8);
+  }
 }
 
 /*========================== End of Services Component =======================*/
@@ -1806,9 +1863,10 @@ footer {
     height: auto;
   }
 
-  .cat {
+  .cat, .cat-2, .cat-3, .cat-4 {
     display: none;
   }
+
 }
 
 /*======================End of Services Component ============================*/
